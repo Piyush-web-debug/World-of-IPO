@@ -1,0 +1,2566 @@
+/* First Page Background */
+#maincontainer {
+  background: url("assets/background_image.png") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;  /* Full screen height */
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure subcontainer content is readable */
+#subcontainer {
+  text-align: center;
+  color: #000; /* You can adjust to white if background is dark */
+  padding: 80px 20px;
+}
+
+/* Navbar styles */
+.navbar1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background: beige;
+  padding: 10px 20px;
+}
+
+.navbar1 a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar1 a:hover {
+  color: steelblue;
+  font-weight: normal;
+}
+
+#page1 {
+  background: transparent;
+  padding: 15px 30px;
+}
+
+/* Headline */
+#ipomaincontent h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#trackipo {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Buttons */
+#exploreipo {
+  margin-top: 30px;
+}
+
+#explore {
+  padding: 12px 40px;
+  font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  #ipomaincontent h1 {
+    font-size: 2.2rem;
+  }
+  #trackipo {
+    font-size: 0.95rem;
+  }
+  #explore {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  #ipomaincontent h1 {
+    font-size: 1.8rem;
+  }
+  #trackipo {
+    font-size: 0.85rem;
+  }
+  #explore {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* Background image */
+#bgimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+  padding: 20px 50px;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-link {
+  font-size: 14px;
+  margin: 0 10px;
+  color: #111827 !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #8b5cf6 !important;
+}
+
+/* Main Section */
+#subcontainer {
+  text-align: center;
+  margin-top: 150px;
+  padding: 20px;
+}
+
+#realtimedata {
+  margin-bottom: 20px;
+}
+
+#realtimedata button {
+  margin: 5px;
+  font-size: 13px;
+  color: #514F6E;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+#ipomaincontent h1 {
+  font-size: 60px;
+  color: #170f49;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+#trackipo {
+  color: #6f6c8f;
+  font-size: 17px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  line-height: 1.5;
+}
+
+#exploreipo {
+  margin-top: 20px;
+}
+
+#explore {
+  background-color: #111827;
+  padding: 15px 40px;
+  font-size: 18px;
+  border: none;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  #ipomaincontent h1 {
+    font-size: 45px;
+  }
+
+  #trackipo {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #ipomaincontent h1 {
+    font-size: 35px;
+  }
+
+  #trackipo {
+    font-size: 14px;
+  }
+
+  #explore {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 22px;
+  }
+
+  #ipomaincontent h1 {
+    font-size: 28px;
+  }
+
+  #trackipo {
+    font-size: 13px;
+  }
+
+  #realtimedata button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* General */
+body {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+#ipo-header2 {
+  font-size: 40px;
+  color: black;
+  padding: 20px;
+}
+
+#content {
+  color: #a6a6a6;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0 auto;
+ }
+
+/* Navbar Buttons */
+.ipo-btn {
+  color: #1b1f26b8;
+  font-size: 16px;
+  width: 160px;
+  height: 48px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin: 5px;
+  background-color: transparent;
+}
+.ipo-btn:hover {
+border-color: #6D28D9;
+  color: #6D28D9;  
+  background-color: transparent;
+}
+
+/* General Card Styles */
+.ipo-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  text-align: left;
+  background: #fff;
+  min-height: 400px; /* same height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.small-header{
+  padding: 30px 10px 0px 10px;
+}
+
+.ipo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ipo-card-header {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+  position: relative;
+  background-color: #F2ECFF;
+  border-radius:10px 10px 0px 0px;
+}
+
+.ipo-card-header.small-header {
+  font-size: 16px;
+}
+
+.ipo-logo {
+  height: 40px;
+  width: 66px;
+  margin-right: 8px;
+}
+
+.ipo-date {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0px 0px 80px;
+}
+
+.favourite {
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  gap: 5px;
+}
+
+.heart-icon {
+  height: 16px;
+  width: 16px;
+}
+
+.ipo-detail {
+  font-size: 15px;
+  color: #333;
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px;
+}
+
+.ipo-detail span {
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.ipo-note {
+  font-size: 13px;
+  color: #777;
+  padding: 0px 10px 0px 10px;
+}
+
+.view-btn {
+  background: #8B5CF6;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 15px;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #8B5CF6;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .ipo-card {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ipo-card {
+    min-height: 360px;
+    font-size: 14px;
+  }
+  .ipo-card-header {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ipo-card {
+    min-height: auto;
+    padding: 12px;
+  }
+  .ipo-card-header {
+    font-size: 15px;
+  }
+  .view-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+/* View All Button */
+.view-all-btn {
+  width: 250px;
+  height: 55px;
+  font-size: 18px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 992px) {
+  #ipo-header2 {
+    font-size: 32px;
+  }
+  .ipo-btn {
+    width: 140px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #ipo-header2 {
+    font-size: 28px;
+  }
+  #content {
+    font-size: 16px;
+  }
+  .ipo-card-header {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  #ipo-header2 {
+    font-size: 24px;
+  }
+  #content {
+    font-size: 14px;
+  }
+  .ipo-card-header {
+    font-size: 14px;
+  }
+  .ipo-detail {
+    font-size: 12px;
+  }
+}
+
+/* ========== Section 3 ========== */
+.page3-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1440px;
+  margin: auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.page3-text {
+  flex: 1 1 60%;
+}
+
+#header3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.highlight {
+  color: #8b5cf6;
+}
+
+.ipo-tag {
+  color: #8b5cf6;
+  background-color: #dccdff33;
+  width: fit-content;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px dashed #8b5cf6;
+  margin-bottom: 1rem;
+}
+
+.ipo-description {
+  font-size: 1rem;
+  color: #a6a6a6;
+  line-height: 1.6;
+  padding: 10px 0;
+}
+
+.learn-btn {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  width: 258px;
+  height: 58px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.learn-btn:hover {
+  background: #8b5cf6;
+  color: white;
+}
+
+/* Card Section */
+.ipo-card {
+  flex: 1 1 35%;
+  max-width: 386px;
+}
+
+.card-body {
+
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-title img {
+  width: 66px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  color: #808080;
+  margin-top: 5px;
+}
+
+.ipo-badge {
+  color: #8b5cf6;
+  background-color: #dccdff33;
+  width: fit-content;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px dashed #8b5cf6;
+  margin: 15px 0;
+}
+
+.ipo-detail {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+
+.ipo-detail span {
+  color: #808080;
+  font-weight: normal;
+}
+
+.ipo-note {
+  font-size: 0.8rem;
+  color:#758090;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* ========== Responsiveness ========== */
+@media (max-width: 992px) {
+  .page3-container {
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+  }
+
+  .page3-text {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  #header3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .ipo-description {
+    text-align: left;
+  }
+
+  .learn-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .ipo-card {
+    max-width: 100%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #header3 {
+    font-size: 1.5rem;
+  }
+
+  .ipo-description {
+    font-size: 0.9rem;
+  }
+
+  .learn-btn {
+    width: 180px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .ipo-detail {
+    font-size: 0.8rem;
+  }
+}
+
+/* Section4 */
+.page4 {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#header4 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-right: 700px;
+}
+
+#header4 .highlight {
+  color: #8B5CF6;
+}
+
+/* Custom Cards */
+.custom-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px 20px;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+}
+
+.custom-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.custom-card .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.custom-card .card-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Hover Effect */
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.2);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+  #header4 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #header4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .custom-card {
+    padding: 20px 15px;
+  }
+
+  .custom-card .card-title {
+    font-size: 1.2rem;
+  }
+
+  .custom-card .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #header4 {
+    font-size: 1.8rem;
+  }
+
+  .custom-card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .custom-card {
+    text-align: center;
+  }
+}
+
+/* IPO Calendar Section5 */
+/* =======================
+   HEADER
+======================= */
+#header5 {
+  font-size: 40px;
+  color: black;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* =======================
+   CALENDAR CARD
+======================= */
+
+
+.calendar-card {
+  width: 100%;
+  max-width: 420px;
+  height: 100px;
+  border-radius: 16px;
+  margin: auto;
+  display: flex;
+  background: white;
+  
+}
+
+.date-label {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.calendar-icon {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* =======================
+   IPO TABLE
+======================= */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ipo-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.ipo-table thead th {
+  font-size: 16px;
+  background-color: #8B5CF6;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  /* white-space: nowrap; */
+}
+
+.ipo-table tbody td {
+  font-size: 16px;
+  vertical-align: middle;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ipo-table tbody td.text-start {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Fix first column */
+.ipo-table th:first-child,
+.ipo-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  text-align: left;
+  min-width: 180px;
+}
+
+/* =======================
+   VIEW MORE BUTTON
+======================= */
+.view-more-btn {
+  background-color: black;
+  color: white;
+  width: 258px;
+  height: 58px;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #333;
+}
+
+/* =======================
+   RESPONSIVENESS
+======================= */
+
+/* Large screens (1280px and below) */
+@media (max-width: 1280px) {
+  #header5 { font-size: 36px; }
+  .ipo-table thead th, .ipo-table tbody td { font-size: 15px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 160px; }
+}
+
+/* Desktops (1200px and below) */
+@media (max-width: 1200px) {
+  #header5 { font-size: 32px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 150px; }
+}
+
+/* Tablets landscape (992px and below) */
+@media (max-width: 992px) {
+  #header5 { font-size: 28px; }
+  .calendar-card { max-width: 90%; height: auto; padding: 10px; }
+  .ipo-table thead th, .ipo-table tbody td { font-size: 14px; padding: 8px; }
+  .view-more-btn { width: 200px; height: 48px; font-size: 16px; }
+}
+
+/* Tablets portrait (768px and below) */
+@media (max-width: 768px) {
+  #header5 { font-size: 26px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 140px; }
+}
+
+/* Small screens (576px and below) */
+@media (max-width: 576px) {
+  #header5 { font-size: 22px; }
+  .date-label { font-size: 14px; }
+  .calendar-icon { width: 22px; height: 22px; }
+  .ipo-table { display: block; min-width: 700px; }
+  .ipo-table thead th, .ipo-table tbody td { font-size: 13px; padding: 6px; }
+  .view-more-btn { width: 160px; height: 44px; font-size: 14px; }
+}
+
+/* Extra-small screens (480px and below) */
+@media (max-width: 480px) {
+  #header5 { font-size: 20px; }
+  .ipo-table { min-width: 650px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 120px; }
+  .ipo-table thead th, .ipo-table tbody td { font-size: 12px; }
+}
+
+/* Very small screens (360px and below) */
+@media (max-width: 360px) {
+  #header5 { font-size: 18px; }
+  .ipo-table { min-width: 600px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 110px; }
+  .view-more-btn { width: 140px; height: 40px; font-size: 13px; }
+}
+
+
+/* Section6 IPO GMP */
+.currentipo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+#header5 {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Table Wrapper (enables scroll) */
+ .table {
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+} 
+
+/* .table-wrapper {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 20px;
+} */
+
+/* IPO Table */
+.ipo-table {
+  width: 100%;
+  min-width: 700px; /* Ensures scroll on small screens */
+  border-collapse: collapse;
+  background: white;
+}
+
+.ipo-table th {
+  font-size: 16px;
+  background-color: #8B5CF6;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ipo-table th:first-child {
+  border-top-left-radius: 16px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.ipo-table th:last-child {
+  border-top-right-radius: 16px;
+}
+
+.ipo-table td {
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ipo-table td:first-child {
+  text-align: left;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+/* FIXED First Column */
+.ipo-table th:first-child,
+.ipo-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  min-width: 180px;
+}
+
+/* View More Button */
+#viewmorebtn {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#viewmorebtn button {
+  background-color: black;
+  width: 258px;
+  height: 58px;
+  font-size: 18px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#viewmorebtn button:hover {
+  background-color: #333;
+}
+
+/* Disclaimer */
+.disclaimer {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: left;
+  color: #333;
+  margin-left: 20px;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+/* Large Screens - 1280px */
+@media (max-width: 1280px) {
+  #header5 { font-size: 36px; }
+  .ipo-table th, .ipo-table td { font-size: 15px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 160px; }
+}
+
+/* 1200px */
+@media (max-width: 1200px) {
+  #header5 { font-size: 34px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 150px; }
+}
+
+/* 992px (Tablet Landscape) */
+@media (max-width: 992px) {
+  #header5 { font-size: 30px; }
+  .ipo-table th, .ipo-table td { font-size: 14px; padding: 8px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 140px; }
+  #viewmorebtn button { width: 220px; height: 52px; font-size: 16px; }
+}
+
+/* 768px (Tablet Portrait) */
+@media (max-width: 768px) {
+  #header5 { font-size: 26px; }
+  .ipo-table { min-width: 650px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 130px; }
+}
+
+/* 576px (Mobile) */
+@media (max-width: 576px) {
+  #header5 { font-size: 22px; }
+  .ipo-table { min-width: 600px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 120px; }
+  .ipo-table th, .ipo-table td { font-size: 13px; }
+  #viewmorebtn button { width: 180px; height: 48px; font-size: 15px; }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  #header5 { font-size: 20px; }
+  .ipo-table { min-width: 550px; }
+  .ipo-table th:first-child, .ipo-table td:first-child { min-width: 110px; }
+}
+
+/* 360px */
+@media (max-width: 360px) {
+  #header5 { font-size: 18px; }
+  .ipo-table { min-width: 500px; }
+  #viewmorebtn button { width: 150px; height: 44px; font-size: 14px; }
+}
+
+/* General Layout */
+.page7-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  min-width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Status Cards */
+.status-card {
+  width: 300px;
+  height: 58px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-card.purple {
+  background-color: #8B5CF6;
+}
+.status-card.violet {
+  background-color: #BE5CF6;
+}
+.status-card.pink {
+  background-color: #F65CE9;
+}
+
+/* Allotment Text */
+.allotment-text {
+  max-width: 889px;
+  margin-top: 30px;
+}
+.allotment-title {
+  font-size: 40px;
+}
+.allotment-desc {
+  color: #A6A6A6;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* Right Section */
+.right-section {
+  width: 470px;
+  height: auto;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.img-box img {
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  padding: 20px;
+  background-color: #F3F4F6;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+#image{
+  width: 100%;
+  max-width: 100%;
+  height: 210px;
+}
+
+/* Input & Select */
+.ipo-select {
+  color: #6c757d;
+  height: 44px;
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.ipo-input {
+  width: 100%;
+  max-width: 432px;
+  height: 44px;
+  border: 1px solid #D6D8DE;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 20px 0; /* ✅ Remove auto-centering */
+  display: block;
+  color: #6c757d;
+  text-align: left; /* ✅ Ensures text starts from left */
+}
+
+/* Button */
+.check-btn {
+  background-color: black;
+  color: white;
+  width: 258px;
+  height: 58px;
+  font-size: 18px;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+/* ✅ Responsive */
+@media (max-width: 1280px) {
+  .ipo-input {
+    max-width: 420px;
+  }
+}
+@media (max-width: 1200px) {
+  .allotment-text {
+    max-width: 100%;
+  }
+  .right-section {
+    width: 100%;
+  }
+  .ipo-input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .ipo-input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page7-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .status-card {
+    width: 100%;
+  }
+  .ipo-input, .ipo-select {
+    width: 100%;
+    max-width: 100%;
+  }
+  .check-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ipo-input {
+    font-size: 13px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .allotment-title {
+    font-size: 28px;
+  }
+  .allotment-desc {
+    font-size: 16px;
+  }
+  .ipo-input {
+    font-size: 12px;
+    height: 40px;
+  }
+}
+
+/* Very small screens (≤360px) */
+@media (max-width: 360px) {
+  .ipo-input {
+    font-size: 11px;
+    padding: 8px;
+    height: 38px;
+  }
+}
+
+/* FAQ Section */
+.faq-section {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.faq-title {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.accordion-item {
+  border-radius: 16px;
+  border: 1px solid #E9ECF2;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background-color: #fff;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #111827;
+  text-align: left;
+  padding: 20px 32px;
+  border-radius: 16px;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23111827'%3e%3cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7' /%3e%3c/svg%3e");
+  transform: scale(1.2);
+}
+
+.accordion-body {
+  font-size: 18px;
+  color: #6F6C8F;
+  padding: 20px 32px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+  .faq-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .accordion-button {
+    font-size: 16px;
+    padding: 18px;
+  }
+
+  .accordion-body {
+    font-size: 16px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-title {
+    font-size: 1.6rem;
+  }
+
+  .accordion-button {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .accordion-body {
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+
+/* Footer Styles */
+/* =======================
+   FOOTER BASE STYLES
+======================= */
+.footer {
+  background: #fff;
+  padding: 40px 20px;
+  border-top: 1px solid #eee;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.logo-box {
+  border: 1px dashed black;
+  width: 200px;
+  height: 119px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.footer-section {
+  min-width: 180px;
+}
+
+.footer-heading {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  color: #6F6C8F;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  color: #000;
+}
+
+.footer-text {
+  color: #6F6C8F;
+  font-size: 14px;
+}
+
+.newsletter-box {
+  max-width: 350px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-input {
+  border-radius: 10px !important;
+  font-size: 14px;
+  padding: 10px;
+  flex: 1;
+}
+
+.newsletter-icon {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.email-link,
+.phone-link {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+.email-link:hover,
+.phone-link:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: #6F6C8F;
+  font-size: 14px;
+  align-items: right;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+/* 1280px (Large Screens) */
+@media (max-width: 1280px) {
+  .footer .container {
+    gap: 25px;
+  }
+}
+
+/* 1200px (Small Desktops) */
+@media (max-width: 1200px) {
+  .footer .container {
+    gap: 20px;
+  }
+  .logo-box {
+    width: 180px;
+    height: 110px;
+  }
+}
+
+/* Tablets & Small Laptops (≤ 992px) */
+@media (max-width: 992px) {
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    min-width: auto;
+  }
+
+  .logo-box {
+    margin: 0 auto 20px auto;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .newsletter-box {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-bottom .col-md-4 {
+    margin-bottom: 10px;
+  }
+}
+
+/* 768px (Tablet Portrait) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+  }
+  .footer-heading {
+    font-size: 15px;
+  }
+
+  .footer-links li {
+    font-size: 15px;
+  }
+  .logo-box {
+    width: 160px;
+    height: 100px;
+    font-size: 16px;
+  }
+}
+
+/* 576px (Mobile) */
+@media (max-width: 576px) {
+  .footer {
+    padding: 25px 10px;
+  }
+  .footer-links li {
+    font-size: 14px;
+  }
+  .newsletter-input {
+    font-size: 12px;
+  }
+  .email-link,
+  .phone-link {
+    font-size: 16px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    font-size: 14px;
+    gap: 5px;
+  }
+}
+
+/* 480px (Small Mobile) */
+@media (max-width: 480px) {
+  .logo-box {
+    width: 150px;
+    height: 90px;
+    font-size: 15px;
+  }
+  .footer-links li {
+    font-size: 13px;
+  }
+  .footer-heading {
+    font-size: 14px;
+  }
+}
+
+/* 360px (Very Small Devices) */
+@media (max-width: 360px) {
+  .logo-box {
+    width: 140px;
+    height: 85px;
+    font-size: 14px;
+  }
+  .footer-links li {
+    font-size: 12px;
+  }
+  .footer-heading {
+    font-size: 13px;
+  }
+  .email-link,
+  .phone-link {
+    font-size: 14px;
+  }
+}
+
+
+
+/* Page21 & Page31*/
+.ipo-header {
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.ipo-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+.ipo-header p {
+  font-size: 18px;
+  font-weight: 500px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.ipo-header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 16px;
+}
+
+.ipo-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.ipo-tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+}
+
+.ipo-btn1 {
+  background: #f2f3f7;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.ipo-btn1:hover {
+  background: #e1e3e9;
+}
+
+.ipo-dropdown select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .ipo-header-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+    .ipo-tabs {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .ipo-buttons {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .ipo-btn1 {
+    flex: 1;
+    text-align: center;
+  }
+
+  .ipo-dropdown {
+    width: 100%;
+  }
+
+  .ipo-dropdown select {
+    width: 100%;
+  }
+}
+
+/* ===============================
+   🌐 GLOBAL STYLES
+=============================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.ipo-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===============================
+   PAGE 22 - IPO LIST & CARDS
+=============================== */
+.app-container,
+.cards-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+#ipo-detail {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#logos {
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+}
+
+.ipo-list,
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* IPO Card */
+.ipo-card1 {
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ipo-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ipo-logo1 {
+  width: 175px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.ipo-details {
+  flex: 1;
+  min-width: 180px;
+}
+
+.ipo-details h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ipo-details p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Buttons */
+.ipo-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.ipo-btn2 {
+  border: 1px dashed #8a2be2;
+  background: #f8f3ff;
+  color: #8a2be2;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+.ipo-btn2:hover { background: #e9ddff; }
+
+.ipo-view-btn1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.view-btn1 {
+  background: #7a3fd0;
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.view-btn1:hover { background: #5a28a5; }
+
+/* Right Card */
+.right-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.right-card h4 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.right-card-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+.right-btn1 {
+  background: #7a3fd0;
+  border: none;
+  padding: 8px 160px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.right-btn1:hover { background: #5a28a5; }
+
+/* ===============================
+   PAGE 22 - PAGINATION
+=============================== */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.pagination-number,
+.pagination-btn {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.pagination-number:hover,
+.pagination-btn:hover { background: #f0f0f0; }
+.pagination-number.active {
+  background: #7a3fd0;
+  color: #fff;
+  font-weight: bold;
+}
+.pagination-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ===============================
+   PAGE 22 - ZERODHA BANNER
+=============================== */
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.responsive-img {
+  width: 100%;
+  max-width: 1272px;
+  max-height: 245px;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* ===============================
+   PAGE 23 - IPO CONTENT
+=============================== */
+.ipo-section { margin: 30px 0; text-align: center; }
+.ipo-section h3 { font-size: 22px; margin-bottom: 10px; }
+.ipo-section p { font-size: 14px; color: #555; }
+
+/* Generic Card */
+.ipo-card2, .ipo-card3, .ipo-card4, .ipo-card5, .ipo-card6, .ipo-card7 {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 14px;
+  background: #fafafa;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/*Mainboard and SMEIPO*/
+.ipo-card2{
+ background-color: white;
+}
+
+/*Purpose*/
+.ipo-card3{
+ background-color: white;
+ border: none;
+ box-shadow: none;
+}
+
+.ipo-card2:hover,
+.ipo-card3:hover,
+.ipo-card4:hover,
+.ipo-card5:hover,
+.ipo-card6:hover {
+  background: #f0ebff;
+  transform: translateY(-4px);
+}
+
+/* Grid Systems */
+.ipo-card-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 16px; margin: 20px 0; }
+.ipo-card-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.ipo-card-grid1, .ipo-card-grid4, .ipo-card-grid5 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.ipo-card-grid3 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+
+/* Sections */
+.ipo-section1,
+.purpose-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin: 20px 0;
+}
+.ipo-text { font-size: 16px; color: #555; line-height: 1.6; text-align: left; }
+
+/* Headings */
+.ipo-title, .purpose-title, .classification-title,
+.journey-title, .investor-title, .applyipo-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+/*What is an ipo*/
+.ipo-img1{
+  width: 48px;
+  height: 48px;
+  text-align: left;
+  margin:0px 10px 10px 0px;
+}
+/*Classification of ipo*/
+.classification-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+}
+.classification-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.ipo-card2 h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 12px 0 8px;
+}
+.ipo-card2 p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* Image */
+.ipo-card-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/*Journey */
+#title1{
+  font-size: 14px;
+  font-weight:bold;
+  color: #111827;
+  text-align: left;
+}
+
+.journey-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+}
+
+/*Investor*/
+.investor-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+}
+
+/* How to Apply for an ipo*/
+.applyipo-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+}
+
+/* ===============================
+   🌐 RESPONSIVE BREAKPOINTS
+=============================== */
+/* Nest Hub & Large Laptops */
+@media (max-width: 1280px) {
+  .ipo-logo1 { width: 150px; height: 70px; }
+  .ipo-details h3 { font-size: 22px; }
+  .right-btn1 { padding: 8px 120px; }
+}
+@media (max-width: 1200px) {
+  .ipo-logo1 { width: 140px; height: 65px; }
+  .ipo-details h3 { font-size: 20px; }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .app-container, .cards-container { grid-template-columns: 1fr; }
+  .ipo-logo1 { width: 130px; height: 60px; }
+  .ipo-details h3 { font-size: 19px; }
+  .right-btn1 { padding: 8px 100px; }
+  .ipo-section1, .purpose-section { flex-direction: column; text-align: center; }
+  .ipo-card-grid1, .ipo-card-grid2 { grid-template-columns: 1fr; }
+}
+
+/* Small Tablets & Large Mobiles */
+@media (max-width: 768px) {
+  .ipo-card-content { flex-direction: column; align-items: flex-start; }
+  .ipo-logo1 { width: 120px; height: 55px; }
+  .ipo-details h3 { font-size: 18px; }
+  .ipo-details p { font-size: 12px; }
+  .ipo-btn2 { font-size: 12px; padding: 5px 10px; }
+  .view-btn1 { font-size: 14px; }
+  .right-card h4 { font-size: 18px; }
+  .right-btn1 { padding: 8px 60px; }
+  .ipo-card-grid3 { grid-template-columns: repeat(2,1fr); }
+  .ipo-card-grid4, .ipo-card-grid5 { grid-template-columns: 1fr; }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .ipo-title, .purpose-title, .classification-title,
+  .journey-title, .investor-title, .applyipo-title { font-size: 18px; }
+  .ipo-logo1 { width: 100px; height: 45px; }
+  .ipo-details h3 { font-size: 16px; }
+  .ipo-btn2 { font-size: 11px; padding: 4px 8px; }
+  .view-btn1 { font-size: 12px; padding: 6px 20px; }
+  .ipo-card2 h4 { font-size: 16px; }
+  .ipo-card2 p, .investor-desc, .applyipo-desc { font-size: 13px; }
+  .ipo-card-grid3 { grid-template-columns: 1fr; }
+  /*Classification of ipo*/
+    .ipo-card-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Extra Small (<=480px) */
+@media (max-width: 480px) {
+  .right-btn1 { padding: 6px 40px; }
+  .ipo-card4, .ipo-card5, .ipo-card6 { font-size: 12px; padding: 10px; }
+  .journey-title, .investor-title, .applyipo-title { font-size: 16px; }
+}
+
+/* Ultra Small (<=360px) */
+@media (max-width: 360px) {
+  .ipo-logo1 { width: 90px; height: 40px; }
+  .ipo-details h3 { font-size: 14px; }
+  .ipo-btn2 { font-size: 10px; padding: 3px 6px; }
+  .view-btn1 { font-size: 12px; padding: 6px 16px; }
+  .right-btn1 { font-size: 12px; padding: 6px 30px; }
+}
+
+/* Buyback1 Page34 */
+.buyback-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.buyback-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/* Main Grid - Both Cards Side by Side */
+.buyback-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* ✅ 20px space between cards */
+  margin-bottom: 40px; /* ✅ Adds spacing below the grid before next card */
+  align-items: stretch;
+}
+
+/* Card Style - SAME for all cards */
+.buyback-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin-bottom: 40px; /* ✅ Adds spacing between stacked cards */
+}
+
+.buyback-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.buyback-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.buyback-card p,
+.buyback-card li {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Images */
+.buyback-image,
+.type-image,
+.help-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Types of Buybacks Section */
+.buyback-types {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.type-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.type-card h4 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* Reasons Grid */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+}
+
+.reason-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.reason-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.reason-item p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Help Section */
+.buyback-help {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.help-card {
+  background: #f3f3f3;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+  .buyback-heading { font-size: 22px; }
+  .reason-item p { font-size: 15px; }
+}
+
+@media (max-width: 1200px) {
+  .buyback-card { padding: 25px 20px; }
+  .reason-icon { width: 42px; height: 42px; }
+}
+
+@media (max-width: 992px) {
+  .buyback-grid {
+    grid-template-columns: 1fr;
+  }
+  .buyback-types {
+    grid-template-columns: 1fr;
+  }
+  .buyback-help {
+    grid-template-columns: 1fr;
+  }
+  .reasons-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buyback-heading { font-size: 20px; text-align: center; }
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .buyback-section {
+    padding: 20px 10px;
+  }
+  .buyback-card {
+    padding: 15px;
+  }
+  .buyback-title {
+    font-size: 24px;
+  }
+  .reason-icon { width: 28px; height: 28px; }
+  .reason-item p { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .buyback-heading { font-size: 18px; }
+  .reason-item p { font-size: 13px; }
+}
+
+@media (max-width: 360px) {
+  .buyback-title {
+    font-size: 20px;
+  }
+  .reason-icon { width: 24px; height: 24px; }
+  .reason-item p { font-size: 12px; }
+}
+
+/* Page42 and IPOCard42 css file */
+
+/* ========= Layout ========= */
+/* ========== Layout Container ========== */
+/* ========== Layout Container ========== */
+/* ========== Page42 Layout ========== */
+.app-container1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.left-section1 {
+  flex: 1;
+  min-width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* ========== IPOCard42 Styles ========== */
+.ipo-card42 {
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ipo-card42:hover {
+  transform: translateY(-3px);
+}
+
+.ipo-card42-top {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.ipo-card42-top h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.ipo-logo42 {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+/* Buttons inside IPOCard */
+.ipo-card42-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+.ipo-pill {
+  background: #e8fbe8;
+  color: #2c7a2c;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px dashed #2c7a2c;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.ipo-card42-details p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+/* Buttons styling */
+.view-btn42,
+.open-btn42 {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  flex: 1 1 auto;
+  text-align: center;
+  min-width: 120px;
+}
+
+.view-btn42 {
+  background: #f8f5ff;
+  color: #7a3fd0;
+}
+
+.view-btn42:hover {
+  background: #e9e1ff;
+}
+
+.open-btn42 {
+  background: #7a3fd0;
+  color: #fff;
+}
+
+.open-btn42:hover {
+  background: #6b30c9;
+}
+
+/* ========== RightCard Styles ========== */
+.right-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-card h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+}
+
+.right-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.right-btn {
+  background: #7a3fd0;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.right-btn:hover {
+  background: #6b30c9;
+}
+
+/* ========== Responsive Breakpoints ========== */
+@media (max-width: 1280px) {
+  .ipo-logo42 {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ipo-card42-top h3 {
+    font-size: 1.3rem;
+  }
+  .view-btn42,
+  .open-btn42 {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .app-container1 {
+    grid-template-columns: 1fr;
+  }
+  .ipo-card42-buttons {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .ipo-card42 {
+    padding: 12px;
+  }
+  .ipo-logo42 {
+    width: 120px;
+    height: 120px;
+  }
+  .ipo-card42-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .ipo-card42-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .view-btn42,
+  .open-btn42 {
+    flex: 1 1 45%;
+    font-size: 0.9rem;
+    padding: 0.45rem 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .ipo-card42-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .view-btn42,
+  .open-btn42 {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.45rem;
+  }
+  .right-btn {
+    width: 100%;
+  }
+}
+
+/* 🔧 Special Fix for < 500px (Dynamic Resizing Buttons) */
+@media (max-width: 500px) {
+  .view-btn42,
+  .open-btn42 {
+    font-size: clamp(0.75rem, 3.5vw, 0.85rem); /* dynamically scale font size */
+    padding: 0.4rem 0.5rem;
+    min-width: 100px;
+  }
+}
+
+/* Small phones: up to 480px */
+@media (max-width: 480px) {
+  .ipo-logo42 {
+    width: 100px;
+    height: 100px;
+  }
+  .ipo-card42-top h3,
+  .right-card h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small phones: up to 360px */
+@media (max-width: 360px) {
+  .ipo-card42 {
+    padding: 10px;
+  }
+  .ipo-card42-buttons {
+    gap: 6px;
+  }
+  .view-btn42,
+  .open-btn42 {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.7rem;
+  }
+}
+
+/* Ultra small screens: below 320px */
+@media (max-width: 320px) {
+  .ipo-card42 {
+    padding: 8px;
+  }
+  .ipo-logo42 {
+    width: 80px;
+    height: 80px;
+  }
+  .ipo-card42-top h3,
+  .right-card h3 {
+    font-size: 0.85rem;
+  }
+  .view-btn42,
+  .open-btn42 {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
